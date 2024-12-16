@@ -1,0 +1,49 @@
+.button {
+    -fx-background-color: transparent; /* Transparent background */
+    -fx-border-color: magenta; /* Magenta border color */
+    -fx-border-width: 2px; /* Border width */
+    -fx-text-fill: black; /* Text color (white) */
+    -fx-font-size: 14px; /* Font size */
+    -fx-padding: 10px 20px; /* Padding */
+    -fx-background-radius: 5px; /* Curved edges */
+    -fx-border-radius: 5px; /* Curved edges for border */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 10, 0 , 0 , 1 );
+}
+
+.button:hover {
+    -fx-background-color: transparent; /* Transparent background on hover */
+    -fx-border-color: magenta; /* Magenta border color on hover */
+}
+
+.button:armed {
+    -fx-background-color: transparent; /* Transparent background on press */
+    -fx-border-color: magenta; /* Magenta border color on press */
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.6) , 10, 0 , 0 , 1 ); /* Shadow effect on press */
+}
+.ToggleButton {
+    -fx-background-color: #4CAF50; /* Green background color */
+    -fx-text-fill: white; /* White text color */
+    -fx-border-color: transparent; /* Transparent border color */
+    -fx-background-radius: 5px; /* Curved edges for ToggleButton */
+}
+
+/* Style for the selected (pressed) state of the ToggleButton */
+.ToggleButton:selected {
+    -fx-background-color: #333; /* Dark background color when selected */
+    -fx-text-fill: white; /* White text color when selected */
+    -fx-border-color: transparent; /* Transparent border color when selected */
+}
+.TextField{
+    -fx-background-color: transparent; /* Transparent background on hover */
+    -fx-border-color: magenta; /* Magenta border color on hover */
+    fx-border-width: 1; /* Set border width */
+    -fx-border-radius: 5; /* Set border radius */
+    -fx-padding: 5; /* Set padding */
+    -fx-max-width: 300;
+    /*-fx-pref-height: 40px;  !* Set preferred height *!*/
+    -fx-max-height: 200;
+
+}
+.TextField:focused{
+    -fx-border-color: #0078d4;
+}

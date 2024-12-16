@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.TextField?>
+<StackPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.snakegame.Controller" stylesheets="/styling.css">
+    <!-- Background Image -->
+    <ImageView>
+        <image>
+            <Image url="/background.png"/> <!-- Replace with your actual image path -->
+        </image>
+    </ImageView>
+    <ImageView fitHeight="350" fitWidth="700" translateY="-70">
+        <image>
+            <Image url="/snakeLogo.png" />
+        </image>
+    </ImageView>
+
+    <!-- Content -->
+    <VBox alignment="CENTER" spacing="20.0">
+        <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+        </padding>
+
+
+        <Button text="Show Rules" onAction="#showGameRules" styleClass="button"/>
+        <TextField fx:id="nameField" promptText="Enter your name" styleClass="TextField" />
+        <Label fx:id="welcomeText"/>
+        <Button text="Play!" onAction="#onHelloButtonClick" styleClass="button"/>
+
+
+
+    </VBox>
+</StackPane>
